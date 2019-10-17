@@ -92,7 +92,7 @@ func update(xmlMap *mxj.Map, fullPath string, value string) error {
     attr := tokens[1]
     val := ATTR_PREFIX+attr+FIELD_SEP+value
     
-    count, err := xmlMap.UpdateValuesForPath(val, path)
+    _, err := xmlMap.UpdateValuesForPath(val, path)
     if err != nil {
         return err
     }
