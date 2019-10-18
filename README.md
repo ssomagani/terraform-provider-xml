@@ -40,4 +40,7 @@ $ go build
 
 See [Terraform documentation](https://www.terraform.io/docs/configuration/providers.html#third-party-plugins) for installing 3rd party plugins.
 
-
+## Limitations
+* Text elements NOT supported yet
+* Wildcards NOT supported yet
+* Deletion of elements on update NOT supported yet
