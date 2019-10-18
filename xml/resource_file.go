@@ -46,8 +46,8 @@ func resourceDeploymentCreate(d *schema.ResourceData, m interface{}) error {
         xmlMap = mxj.Map(make(map[string]interface{}, 0))
     }
     
-    var configs map[string]interface{} = d.Get("elements").(map[string]interface{})
-    for key, val := range configs {
+    var elements map[string]interface{} = d.Get("elements").(map[string]interface{})
+    for key, val := range elements {
         update(&xmlMap, key, val.(string))
     }
     
@@ -68,8 +68,8 @@ func resourceDeploymentUpdate(d *schema.ResourceData, m interface{}) error {
         return err
     }
     
-    var configs map[string]interface{} = d.Get("elements").(map[string]interface{})
-    for key, val := range configs {
+    var elements map[string]interface{} = d.Get("elements").(map[string]interface{})
+    for key, val := range elements {
         update(&xmlMap, key, val.(string))
     }
     

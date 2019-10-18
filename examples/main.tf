@@ -3,6 +3,6 @@ resource "xml_file" "example" {
     elements = {
         "root.second-level.third-level.@attribute" = "value"
         "root.second-level.@attribute" = "value"
-        "root.2nd-level.third-level.@name" = "some-value"
+        "root.doosra-level.third-level.@name" = "some-value"
     }
 }
